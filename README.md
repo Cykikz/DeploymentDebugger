@@ -2,7 +2,7 @@
 
 > AI-powered autonomous DevOps debugging agent. Paste a broken log → 10 agents analyze, fix, commit, and redeploy. Zero terminal required.
 
-## 🎯 What It Does
+##  What It Does
 
 DebugBOB runs a 10-agent pipeline that automatically diagnoses and fixes deployment failures:
 
@@ -17,7 +17,7 @@ DebugBOB runs a 10-agent pipeline that automatically diagnoses and fixes deploym
 9. **Output Compressor** — Strips verbose output between agents
 10. **Git Agent** — Writes commit messages, creates version tags
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 debugbob/
@@ -85,7 +85,7 @@ debugbob/
 └── .env.example                  # Environment variables template
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -101,7 +101,7 @@ DEMO_MODE=false                 # Use pre-recorded session
 DEBUGBOB_AUTONOMY_LEVEL=2       # 1=notify | 2=PR | 3=auto
 ```
 
-## 🎨 Architecture
+##  Architecture
 
 ### Multi-Agent Pipeline
 
@@ -133,7 +133,7 @@ DEBUGBOB_AUTONOMY_LEVEL=2       # 1=notify | 2=PR | 3=auto
 - Each agent emits events as it runs
 - Frontend updates in real-time
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Type check
@@ -146,7 +146,7 @@ pnpm build
 pnpm start
 ```
 
-## 📊 Token Budget
+##  Token Budget
 
 | Agent | Tokens | Purpose |
 |-------|--------|---------|
@@ -163,13 +163,13 @@ pnpm start
 
 **Total per run:** ~6,000-10,000 tokens (depending on which agents fire)
 
-## 🔐 Security
+##  Security
 
 - Never commit `.env.local` (it's gitignored)
 - API keys are server-side only
 - No sensitive data in client-side code
 
-## 🚧 Roadmap
+##  Roadmap
 
 ### Phase 1 (Current)
 - ✅ All 10 agents implemented
@@ -186,14 +186,14 @@ pnpm start
 - Post-deploy validation
 - Rollback handler
 
-## 📝 License
+##  License
 
 MIT
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please read the agent specifications in the markdown files before making changes.
 
 ---
 
-Built with ❤️ using Next.js, TypeScript, Anthropic Claude, and Zustand
+Built using Next.js, TypeScript, Anthropic Claude, and Zustand
